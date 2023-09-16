@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Honestly the only thing I want from a new HTML spec is for this to be automatic lmao-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Fira+Sans:wght@200&display=swap" rel="stylesheet">
+        <style>
+            body {
+                margin:0;
+                padding: 0;
+                background-color: #3a3a3a;
+                position: absolute;
+                width: 100vw;
+                height:100vh;
+                overflow:hidden;
+            }
+            .thenote {
+                background-color: white;
+                height:85vh;
+                font-family: sans-serif;
+                padding:5px;
+                margin:0;
+                border:0;
+                box-sizing: border-box;
+                background-color: #666666;
+                transition-duration: 0.5s;
+            }
+            
+          .thenote:focus {
+                border:0;
+                outline:none;
+               background-color: #131313;    
+               color:white;            
+            }
+
+            .upper {
+                background-color: #202020;
+                margin:0;
+                padding:0;
+                height:7vh;
+                box-sizing: border-box;
+            }
+
+            img {
+                position: absolute;
+                height:7vh;
+                top:0;
+                opacity: 0.2;
+            }
+
+            .footer {
+                margin:0;
+                padding: 2vh;
+                height:7vh;
+                background-color: #202020;
+            }
+
+            p {
+                text-align: center;
+                font-size: 11px;
+                font-family: 'Comfortaa', sans-serif;
+                color: white;
+                margin:0;
+            }
+
+            h1 {
+                text-align: center;
+                font-family: 'Fira Sans', sans-serif;
+                color:white;
+                margin:0;
+                /*margin-left: 10vw;
+                margin-right: 10vw; /* Keeps the text away from the fires, but causes word wrap issues. I personally like the overlap, but it is what it is.*/
+                font-size: min(6vw, 5vh);
+                padding-top: 1vh;
+            }
+            html{ 
+                margin:0;
+                padding: 0;
+            }
+
+            a,a:visited {
+                color:#b9c0fd;
+                text-decoration: none;
+                transition-duration: 1s;
+            }
+
+            a:hover {
+                color:#644ce9;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="upper">
+            <h1>CTRL+W to instantly delete the note</h1>
+            <img src="fire.png" style="left:0;">
+            <img src="fire.png" style="right:0;">
+        </div>
+        <div contenteditable="true" class="thenote"></div>
+        <div class="footer"> 
+            <p> Icons courtesy of <a href="https://thenounproject.com">The Noun Project</a> under a Creative Commons Attribution License.</p> 
+            <p>Fire icon made by <a href="https://thenounproject.com/uli.cia/">ulicia</a> for the Noun Project. (CC BY 3.0)</p>
+        </div>
+    </body>
+</html>
